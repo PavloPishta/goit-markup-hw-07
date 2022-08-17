@@ -1,0 +1,44 @@
+.company-qualities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.company-qualities-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+
+        &::before {
+            content: "";
+            display: block;
+            margin-bottom: 30px;
+            height: 120px;
+    
+            background-color: #F5F4FA;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+}
+
+
+
+.icon-antenna::before {
+    background-image: url('../images/company-qualities/antenna.svg');
+}
+
+.icon-clock::before {
+    background-image: url('../images/company-qualities/clock.svg')
+}
+
+.icon-diagram::before {
+    background-image: url('../images/company-qualities/diagram.svg');
+}
+
+.icon-astronaut::before {
+    background-image: url('../images/company-qualities/astronaut.svg');
+}
+
+.section-subtitle_company-qualities-subtitle {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}

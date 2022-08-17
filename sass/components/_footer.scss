@@ -1,0 +1,127 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--page-background-color);
+}
+
+.address-list__link {
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--address-link-text-color);
+    transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.map {
+    color: var(--map-text-color);
+}
+
+.logo__part-footer {
+    color: var(--logo-footer-text-color);
+}
+
+.page-footer__logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.social-media-subtitle {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-style: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--logo-footer-text-color)
+}
+
+.page-footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.social-media-container {
+    margin-left: auto;
+}
+
+.social-media-list {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color var(--transition-dur-and-func);
+
+    color: var(--third-text-color);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+        }
+}
+
+
+
+.social-media-list__icon {
+    fill: currentColor;
+}
+
+.subscription-container {
+    margin-left: auto;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.modal-btn_subscription-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 0;
+    min-width: 200px;
+
+    &::after {
+            content: "";
+            display: block;
+            margin-left: 10px;
+            width: 24px;
+            height: 24px;
+            background-image: url("../images/icon-send.svg")
+        }
+}
+
+.subscription-form__input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    min-width: 358px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
